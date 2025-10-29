@@ -383,3 +383,58 @@ article {
 }
 
 
+/* Detalle de Empleo */
+
+.detalle-busqueda{
+
+   header{
+      display:block;
+      h1{
+       
+        font-size: inherit;
+        margin-top:2rem ;
+        display:block;
+        small{
+          font-weight: 100;
+          color: #94a3b8;
+          
+        }
+      }
+      article{
+        display:flex;
+        padding: 1rem;
+        margin-top: 3rem;
+        justify-content: space-between;
+        align-items: center;
+        
+        div{
+            display: flex;
+            flex-direction: column;
+            h3{
+              font-size: .9rem;
+            
+            }
+        }  
+        .button-apply-job{
+            padding: .7rem;
+            width: 80px;
+            font-size: 1rem;
+        
+        }    
+      }
+   }
+   article{
+    background-color: initial
+    ;
+   }
+   @media (min-width: 768px){
+   
+    header{
+        font-size: 1.5rem;
+        article .button-apply-job{
+          width: 100px;
+        }
+
+    }
+}
+}
