@@ -412,63 +412,29 @@ article {
 
 
 /* Detalle de Empleo */
-
-.detalle-busqueda{
-  width: 90%;
-  max-width: 1280px;
-  margin: 0 auto;
-   header{
-      display:block;
-      h1{
-       
-        font-size: inherit;
-        margin-top:2rem ;
-        display:block;
-        small{
-          font-weight: 100;
-          color: #94a3b8;
-          
-        }
-      }
-      article{
-        display:flex;
-        padding: 1rem;
-        margin-top: 3rem;
+main>section:nth-child(1){
+  height: auto;
+  width:90%;
+  margin: 0 auto;;
+  &>header{
+    display: flex;
+    width: 100%;
+    margin-bottom: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    
+    &>div{
+        width:100%;
+        display: flex;
         justify-content: space-between;
-        align-items: center;
-        
-        div{
-            display: flex;
-            flex-direction: column;
-          
-            
-            h3{
-              font-size: .9rem;
-              margin-bottom: 1rem !important;
-            
-            
-            }
-        }  
-        .button-apply-job{
-            padding: .7rem;
-            width: 80px;
-            font-size: 1rem;
-        
-        }    
-      }
-   }
-   article{
-    background-color: initial
-    ;
-   }
-   @media (min-width: 768px){
-   
-    header{
-        font-size: 1.5rem;
-        article .button-apply-job{
-          width: 100px;
-        }
-
     }
+  }
+  &>div{
+   text-align: left;
+   width: 100%;
+   margin-bottom: 1rem;
+  }
+  
 }
-}
+
