@@ -413,28 +413,60 @@ article {
 
 /* Detalle de Empleo */
 main>section:nth-child(1){
+  & * {outline: 1px solid red;}
+  display: block;
   height: auto;
   width:90%;
-  margin: 0 auto;;
+  margin: 0 auto;
+  
   &>header{
-    display: flex;
+    display: block;
     width: 100%;
-    margin-bottom: 1rem;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    
+    padding: 0;
+    border-bottom: 0;
+    h1{
+      text-align: left;
+      padding-block: 1.5rem;
+      margin-block: 2rem;
+      
+    }
     &>div{
-        width:100%;
         display: flex;
         justify-content: space-between;
+        margin-bottom: 2rem;
+        
     }
+    
   }
-  &>div{
-   text-align: left;
-   width: 100%;
-   margin-bottom: 1rem;
-  }
+  &>.detalle-content{
+      width: 90%;
+      margin: 0 auto;
+      text-align: left;
+      &>div{
+          text-align: left;
+          width: 100%;
+          margin-bottom: 1rem;
+          ul{
+              list-style-type: none;
+              list-style-position: inside;
+              list-style-image: url("flecha.svg");
+          }
+          h3{
+              margin-bottom: 1rem;
+          }
+      }
+     
+   } 
+  &>footer{
+        text-align: right;
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+        
+    }
+    
   
 }
 
+
+  
